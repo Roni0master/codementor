@@ -725,7 +725,9 @@ mark.hl { background: color-mix(in srgb, var(--accent) 28%, transparent); color:
 .profile-avatar { position: relative; }
 .profile-avatar .avatar { width: 104px; height: 104px; font-size: 38px; border: 4px solid var(--surface); box-shadow: var(--shadow); }
 .profile-avatar .btn-icon { position: absolute; right: 2px; bottom: 2px; width: 32px; height: 32px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border-strong); color: var(--text); }
-.profile-id { flex: 1; min-width: 200px; padding-bottom: 4px; }
+/* text starts below the cover (avatar overlaps it by 46px), so the name never sits on the light gradient */
+.profile-id { flex: 1; min-width: 200px; padding-bottom: 4px; align-self: flex-start; padding-top: 56px; }
+.profile-main > .btn { align-self: flex-start; margin-top: 60px; }
 .profile-id h1 { font-size: 26px; font-weight: 760; letter-spacing: -.025em; }
 .profile-id .handle { color: var(--text-2); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 4px; font-size: 14px; }
 .profile-id .bio { margin-top: 10px; color: var(--text); max-width: 620px; font-size: 14.5px; }
@@ -899,9 +901,19 @@ mark.hl { background: color-mix(in srgb, var(--accent) 28%, transparent); color:
   .md th, .md td { padding: 8px 10px; }
   .composer-bar .select { max-width: 120px; }
   .lib-hero { grid-template-columns: 1fr; }
+  .profile-id { padding-top: 0; }
+  .profile-main > .btn { margin-top: 0; }
   .kv { grid-template-columns: 1fr; gap: 2px 0; }
   .kv dd { margin-bottom: 10px; }
   .set-row { flex-direction: column; align-items: stretch; }
+}
+
+/* Show code exactly as typed: no "<=" → "≤" font ligatures (confusing for beginners).
+   Kept at the end so it wins over the `font:` shorthands above, which reset ligatures. */
+code, pre, textarea, kbd, .mono, .cb-pre, .cb-pre code, .cb-gutter, .editor-area pre, .editor-area code, .editor-area textarea,
+.md .ic-code, .console, .saved-card .preview, .composer textarea {
+  font-variant-ligatures: none !important;
+  font-feature-settings: "liga" 0, "calt" 0 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

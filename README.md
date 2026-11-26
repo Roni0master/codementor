@@ -2,7 +2,7 @@
 
 **An offline coding mentor for students.** Paste an error or your code, and CodeMentor explains what went wrong, shows the fix, and teaches the concept behind it, all without an internet connection.
 
-![license: MIT](https://img.shields.io/badge/license-MIT-blue) ![dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen) ![works offline](https://img.shields.io/badge/works-offline-8b7bff)
+[![tests](https://github.com/Roni0master/codementor/actions/workflows/test.yml/badge.svg)](https://github.com/Roni0master/codementor/actions/workflows/test.yml) ![license: MIT](https://img.shields.io/badge/license-MIT-blue) ![dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen) ![works offline](https://img.shields.io/badge/works-offline-8b7bff)
 
 <img src="app/icons/icon-192.png" width="72" alt="CodeMentor logo">
 
@@ -13,6 +13,14 @@
 - 🔐 **Private by design:** local accounts, device-bound sessions, and no servers, analytics or tracking
 
 No build step and no dependencies: plain HTML, CSS and JavaScript, plus a ~300-line Node.js launcher.
+
+## Screenshots
+
+| Decoding an error, with the exact line and the real cause | Playground: live problem markers and one-click fixes |
+|---|---|
+| ![Chat explaining a Python TypeError](docs/screenshots/chat-error.jpg) | ![Playground showing three problems in buggy Python code](docs/screenshots/playground.jpg) |
+| **Library: concepts with analogies, traces and quizzes** | **Profile: stats, streaks and achievements** |
+| ![Recursion concept page](docs/screenshots/library.jpg) | ![Profile page with stats and achievements](docs/screenshots/profile.jpg) |
 
 ## Quick start
 
