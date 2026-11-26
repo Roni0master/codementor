@@ -1,0 +1,157 @@
+[
+  {
+    "q": "hi",
+    "expect": "CodeMentor"
+  },
+  {
+    "q": "explain recursion",
+    "expect": "Recursion"
+  },
+  {
+    "q": "simpler",
+    "expect": "Recursion"
+  },
+  {
+    "q": "show it in java",
+    "expect": "public|static"
+  },
+  {
+    "q": "quiz me",
+    "expect": "quiz"
+  },
+  {
+    "q": "what is a closure in javascript",
+    "expect": "Closure",
+    "reset": true
+  },
+  {
+    "q": "difference between == and === in js",
+    "expect": "==="
+  },
+  {
+    "q": "list vs tuple",
+    "expect": "Tuple"
+  },
+  {
+    "q": "abstract class vs interface",
+    "expect": "Interface"
+  },
+  {
+    "q": "difference between stack and queue",
+    "expect": "Queue"
+  },
+  {
+    "q": "write a program to check palindrome in java",
+    "expect": "palindrome"
+  },
+  {
+    "q": "how to reverse a string in python",
+    "expect": "Reverse"
+  },
+  {
+    "q": "c program to find factorial",
+    "expect": "Factorial"
+  },
+  {
+    "q": "time complexity of binary search",
+    "expect": "log n"
+  },
+  {
+    "q": "what is big o notation",
+    "expect": "Big-O"
+  },
+  {
+    "q": "Traceback (most recent call last):\n  File \"main.py\", line 3, in <module>\n    print(nums[i])\nIndexError: list index out of range",
+    "expect": "IndexError"
+  },
+  {
+    "q": "why am i getting this error\n```\nNameError: name 'pritn' is not defined\n```\n```python\nname = input('Name: ')\npritn('Hello', name)\n```",
+    "expect": "print"
+  },
+  {
+    "q": "TypeError: Cannot read properties of undefined (reading 'map')",
+    "expect": "undefined"
+  },
+  {
+    "q": "Exception in thread \"main\" java.lang.NullPointerException\n    at Main.main(Main.java:5)",
+    "expect": "NullPointer"
+  },
+  {
+    "q": "my code gives segmentation fault\n```c\n#include <stdio.h>\nint main() {\n    int n;\n    scanf(\"%d\", n);\n    printf(\"%d\", n);\n    return 0;\n}\n```",
+    "expect": "Segmentation"
+  },
+  {
+    "q": "what's wrong with my code\n```python\ndef greet(name)\n    print(\"Hi \" + name)\nfor i in range(len(names) + 1):\n    greet(names[i])\n```",
+    "expect": "Missing|:"
+  },
+  {
+    "q": "```java\npublic class Main {\n    public static void main(String[] args) {\n        int x = 5\n        system.out.println(x);\n        String s = \"a\";\n        if (s == \"a\") System.out.println(\"yes\");\n    }\n}\n```",
+    "expect": "review|;"
+  },
+  {
+    "q": "explain this code line by line\n```python\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))\n```",
+    "expect": "walkthrough"
+  },
+  {
+    "q": "what is the time complexity of this\n```python\nfor i in range(n):\n    for j in range(n):\n        print(i, j)\n```",
+    "expect": "n²"
+  },
+  {
+    "q": "'python' is not recognized as an internal or external command",
+    "expect": "PATH"
+  },
+  {
+    "q": "git push rejected non-fast-forward",
+    "expect": "push|rejected|remote"
+  },
+  {
+    "q": "how do i start learning dsa",
+    "expect": "DSA"
+  },
+  {
+    "q": "explain pointers in c",
+    "expect": "Pointer"
+  },
+  {
+    "q": "what is a hashmap",
+    "expect": "Hash"
+  },
+  {
+    "q": "explain dynamic programming",
+    "expect": "Dynamic",
+    "depth": "deep"
+  },
+  {
+    "q": "what is the meaning of life",
+    "expect": "not sure"
+  },
+  {
+    "q": "how to read a file in java",
+    "expect": "file"
+  },
+  {
+    "q": "explain inheritance",
+    "expect": "Inheritance",
+    "lang": "cpp"
+  },
+  {
+    "q": "SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+    "expect": "JSON"
+  },
+  {
+    "q": "```js\nconst total = 0;\nfor (let i = 0; i <= arr.length; i++) {\n  total += arr[i]\n}\nconsole.log(total.lenght)\ndocument.getElementByID('x')\n```",
+    "expect": "review|const"
+  },
+  {
+    "q": "what is the difference between process and thread",
+    "expect": "Thread"
+  },
+  {
+    "q": "explain bfs and dfs",
+    "expect": "BFS|graph"
+  },
+  {
+    "q": "thanks",
+    "expect": "help"
+  }
+]

@@ -1,0 +1,23 @@
+# Dependencies (the project has none, but just in case)
+node_modules/
+npm-debug.log*
+
+# Local data and secrets
+data/
+.env
+*.local.json
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build / compiled output
+*.exe
+*.o
+*.class
+dist/
+coverage/
+*.log

@@ -1,0 +1,17 @@
+{
+  "name": "codementor",
+  "version": "1.0.0",
+  "description": "Offline coding mentor for students: error decoding, concept explanations, code review and a playground. No dependencies, no internet.",
+  "license": "MIT",
+  "private": true,
+  "main": "server.js",
+  "keywords": ["education", "offline", "coding", "students", "debugging", "error-decoder", "pwa"],
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js --no-open",
+    "test": "node tests/run-tests.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

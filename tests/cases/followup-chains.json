@@ -1,0 +1,50 @@
+[
+  {
+    "q": "what is a closure in javascript?",
+    "expect": "## Closures",
+    "reset": true
+  },
+  {
+    "q": "Explain it simpler",
+    "expect": "## Closures",
+    "not": "walkthrough"
+  },
+  {
+    "q": "Show it in Python",
+    "expect": "nonlocal"
+  },
+  {
+    "q": "Go deeper",
+    "expect": "## Closures"
+  },
+  {
+    "q": "Explain it line by line",
+    "expect": "Line by line"
+  },
+  {
+    "q": "write a program to reverse a string",
+    "expect": "Reverse",
+    "reset": true
+  },
+  {
+    "q": "explain it",
+    "expect": "Line by line"
+  },
+  {
+    "q": "What is the time complexity?",
+    "expect": "complexity"
+  },
+  {
+    "q": "explain recursion",
+    "expect": "## Recursion",
+    "reset": true
+  },
+  {
+    "q": "i don't understand",
+    "expect": "## Recursion"
+  },
+  {
+    "q": "quiz me",
+    "expect": "quiz"
+  }
+]

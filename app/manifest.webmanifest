@@ -1,0 +1,22 @@
+{
+  "name": "CodeMentor: Offline Coding Mentor",
+  "short_name": "CodeMentor",
+  "description": "Decode errors, understand concepts and review code. Runs fully offline on your device.",
+  "start_url": "./#/chat",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0e15",
+  "theme_color": "#0b0e15",
+  "categories": ["education", "developer", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "New chat", "url": "./#/chat" },
+    { "name": "Playground", "url": "./#/playground" },
+    { "name": "Library", "url": "./#/library" }
+  ]
+}

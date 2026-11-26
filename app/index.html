@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="violet" data-font="md">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CodeMentor</title>
+<meta name="description" content="CodeMentor: an offline coding mentor that decodes errors, explains concepts and reviews code. Runs entirely on your device.">
+<meta name="theme-color" content="#0b0e15">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  // Apply theme before first paint to avoid a flash.
+  (function () {
+    try {
+      var t = localStorage.getItem('cm.theme') || 'dark';
+      var a = localStorage.getItem('cm.accent') || 'violet';
+      var f = localStorage.getItem('cm.font') || 'md';
+      if (t === 'system') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      var d = document.documentElement;
+      d.setAttribute('data-theme', t); d.setAttribute('data-accent', a); d.setAttribute('data-font', f);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+  <div id="boot" class="boot">
+    <div class="boot-mark"></div>
+    <div class="boot-text">Starting CodeMentor…</div>
+  </div>
+  <div id="root"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="modals"></div>
+  <noscript><p style="padding:24px;font-family:sans-serif">CodeMentor needs JavaScript enabled.</p></noscript>
+
+  <!-- Core -->
+  <script src="js/core/icons.js"></script>
+  <script src="js/core/util.js"></script>
+  <script src="js/core/db.js"></script>
+  <script src="js/core/security.js"></script>
+  <script src="js/core/auth.js"></script>
+
+  <!-- Rendering -->
+  <script src="js/render/highlight.js"></script>
+  <script src="js/render/markdown.js"></script>
+
+  <!-- Offline knowledge base -->
+  <script src="js/kb/registry.js"></script>
+  <script src="js/kb/concepts-basics.js"></script>
+  <script src="js/kb/concepts-oop.js"></script>
+  <script src="js/kb/concepts-dsa.js"></script>
+  <script src="js/kb/concepts-lang.js"></script>
+  <script src="js/kb/errors-python.js"></script>
+  <script src="js/kb/errors-js.js"></script>
+  <script src="js/kb/errors-java-c.js"></script>
+  <script src="js/kb/errors-tools.js"></script>
+  <script src="js/kb/recipes.js"></script>
+  <script src="js/kb/compare-faq.js"></script>
+
+  <!-- Engine -->
+  <script src="js/engine/search.js"></script>
+  <script src="js/engine/analyzer.js"></script>
+  <script src="js/engine/brain.js"></script>
+  <script src="js/engine/llm.js"></script>
+  <script src="js/engine/runner.js"></script>
+
+  <!-- UI -->
+  <script src="js/ui/editor.js"></script>
+  <script src="js/ui/auth-view.js"></script>
+  <script src="js/ui/chat-view.js"></script>
+  <script src="js/ui/history-view.js"></script>
+  <script src="js/ui/library-view.js"></script>
+  <script src="js/ui/playground-view.js"></script>
+  <script src="js/ui/saved-view.js"></script>
+  <script src="js/ui/profile-view.js"></script>
+  <script src="js/ui/settings-view.js"></script>
+  <script src="js/ui/palette.js"></script>
+  <script src="js/ui/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "q": "what's wrong with my code?\n```text\n  File \u001b[35m\"main.py\"\u001b[0m, line \u001b[35m1\u001b[0m\n    def greet(name)\u001b[1;31m\u001b[0m\n                   \u001b[1;31m^\u001b[0m\n\u001b[1;35mSyntaxError\u001b[0m: \u001b[35mexpected ':'\u001b[0m\n```\n```python\ndef greet(name)\n    print(\"Hello, \" + name)\n\nnames = [\"Asha\", \"Ravi\"]\nfor i in range(len(names) + 1):\n    greet(names[i])\npritn(\"done\")\n```",
+    "expect": "Missing `:` after `def`[\\s\\S]*pritn[\\s\\S]*off-by-one",
+    "reset": true
+  },
+  {
+    "q": "\u001b[1;35mTraceback (most recent call last):\u001b[0m\n  File \u001b[35m\"main.py\"\u001b[0m, line \u001b[35m3\u001b[0m, in \u001b[35m<module>\u001b[0m\n    print(nums[5])\n\u001b[1;35mIndexError\u001b[0m: \u001b[35mlist index out of range\u001b[0m",
+    "expect": "^## \\S+ IndexError: list index out of range",
+    "reset": true
+  },
+  {
+    "q": "src/main.c:5:13: \u001b[01;35m\u001b[Kwarning: \u001b[m\u001b[Kformat '%d' expects argument of type 'int *', but argument 2 has type 'int'",
+    "expect": "expects",
+    "reset": true
+  },
+  {
+    "q": "#include<stdio.h>\n#include<stdlib.h>\n#include<math.h>\n#include<ctype.h>\nint top=-1,i;\nfloat op1,op2;\nfloat res,stack[10];\nchar symb,postfix[20];\nvoid push(float item){\nstack[++top]=item;\n}\nfloat pop(){\nreturn stack[top--];\n}\nvoid main(){\nprintf(\"Enter the valid postfix expression:\");\nscanf(\"%d\",postfix);\nfor(i=0;postfix[i]!='\\0';i++){\nsymb=postfix[i];\nif(isdigit(symb)){\npush(symb-'0');\n}\nelse{\nop1=pop();\nop2=pop();\nswitch(symb){\ncase '+':push(op2+op1);\nbreak;\ncase '-':push(op2-op1);\nbreak;\ncase '/':push(op2/op1);\nbreak;\ncase '%':push(fmod(op2,op1));\nbreak;\ncase '*':push(op2*op1);\nbreak;\ncase '^':push(pow(op2,op1));\nbreak;\ndefault:push(0);\n}\n}\n}\nres=pop();\nprintf(\"The evaluated postfix expression is %f.\",res);\n}\n\n                                         the main probleme in this code is  scanf(\"%d\",postfix);     but it found somthing else ????",
+    "expect": "Wrong format: `%d` used for `postfix`[\\s\\S]*scanf\\(\"%s\",postfix\\)",
+    "reset": true
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "q": "what's wrong with my code\n```python\ndef greet(name)\n    print(\"Hi \" + name)\nfor i in range(len(names) + 1):\n    greet(names[i])\n```",
+    "expect": "range\\(len\\(names\\)\\)",
+    "not": "greet\\(name\\[i\\]\\)"
+  },
+  {
+    "q": "What is the time complexity?",
+    "expect": "O\\(n\\)"
+  },
+  {
+    "q": "Explain it line by line",
+    "expect": "Line by line"
+  },
+  {
+    "q": "```cpp\n#include <iostream>\nint main() {\n    int a = 5;\n    cout << a << endl;\n    return 0;\n}\n```",
+    "expect": "std::",
+    "reset": true
+  },
+  {
+    "q": "```java\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        String name = sc.nextLine();\n        System.out.println(name);\n    }\n}\n```",
+    "expect": "import java.util.Scanner"
+  },
+  {
+    "q": "```python\nx = 10\nif x > 5:\nprint('big')\n  y = 3\n```",
+    "expect": "indented"
+  },
+  {
+    "q": "```js\nfunction add(a, b {\n  return a + b;\n}\n```",
+    "expect": "Syntax error"
+  },
+  {
+    "q": "```c\n#include <stdio.h>\nint main() {\n    char name[5] = \"hello\";\n    printf(\"%d\", 3.5);\n    printf(\"%s %d\\n\", name);\n    return 0;\n}\n```",
+    "expect": "too small"
+  },
+  {
+    "q": "write a program for bubble sort",
+    "expect": "Bubble",
+    "reset": true
+  },
+  {
+    "q": "show it in c++",
+    "expect": "swap\\(a\\[j\\]"
+  },
+  {
+    "q": "explain it line by line",
+    "expect": "Line by line"
+  },
+  {
+    "q": "explain step by step how merge sort works",
+    "expect": "Sorting"
+  },
+  {
+    "q": "IndentationError: expected an indented block after 'if' statement on line 3",
+    "expect": "indent",
+    "reset": true
+  },
+  {
+    "q": "why",
+    "expect": "indentation|block"
+  },
+  {
+    "q": "what is the difference between let and var",
+    "expect": "var"
+  },
+  {
+    "q": "fatal: not a git repository (or any of the parent directories): .git",
+    "expect": "git init"
+  },
+  {
+    "q": "explain polymorphism with example",
+    "expect": "Polymorphism"
+  },
+  {
+    "q": "give me another example",
+    "expect": "Example"
+  },
+  {
+    "q": "ModuleNotFoundError: No module named 'numpy'",
+    "expect": "pip install numpy"
+  },
+  {
+    "q": "error: cannot find symbol\n  symbol:   variable conut\n  location: class Main",
+    "expect": "conut"
+  },
+  {
+    "q": "src/main.cpp:7:5: error: 'cout' was not declared in this scope",
+    "expect": "std"
+  },
+  {
+    "q": "how to take input in java",
+    "expect": "Scanner"
+  },
+  {
+    "q": "two sum problem",
+    "expect": "Two Sum"
+  },
+  {
+    "q": "explain linked list",
+    "expect": "Linked",
+    "depth": "simple"
+  },
+  {
+    "q": "deeper",
+    "expect": "Going deeper"
+  },
+  {
+    "q": "array vs linked list",
+    "expect": "Linked"
+  },
+  {
+    "q": "what are the 4 pillars of oop",
+    "expect": "Encapsulation"
+  },
+  {
+    "q": "explain async await",
+    "expect": "Promise"
+  },
+  {
+    "q": "which language should i learn first",
+    "expect": "Python"
+  },
+  {
+    "q": "my program is stuck in an infinite loop\n```python\ni = 0\nwhile i < 10:\n    print(i)\n```",
+    "expect": "infinite"
+  },
+  {
+    "q": "explain sql joins",
+    "expect": "JOIN"
+  },
+  {
+    "q": "dfs vs bfs",
+    "expect": "BFS"
+  },
+  {
+    "q": "who are you",
+    "expect": "CodeMentor"
+  },
+  {
+    "q": "explain hoisting",
+    "expect": "hoist"
+  },
+  {
+    "q": "I get this error:\n```text\nCompiler warnings:\nmain.c: In function 'main':\nmain.c:5:13: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]\n     scanf(\"%d\", n);\n             ^\n```n Here is my code:\n```c\n#include <stdio.h>\nint main() {\n    int n;\n    char word[5] = \"hello\";\n    scanf(\"%d\", n);\n    printf(\"%d %s\\n\", n, word);\n    return 0;\n}\n```",
+    "expect": "expects|address|&n",
+    "reset": true
+  },
+  {
+    "q": "```python\nscores = input().split()\nprint(sum(scores) / len(scores))\n```",
+    "expect": "list of strings"
+  }
+]
